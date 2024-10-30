@@ -3,8 +3,6 @@ import db from "@/db";
 import { Invoices } from "@/db/schema";
 import { cn } from "@/lib/utils";
 import { eq } from "drizzle-orm";
-import { notFound } from "next/navigation";
-
  
 async function getInvoiceById(invoiceId:number){
   "use server"
