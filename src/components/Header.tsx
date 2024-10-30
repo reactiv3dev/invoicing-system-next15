@@ -8,11 +8,11 @@ import Link from 'next/link'
 import Container from './Container'
 
 
-export default function HeaderComponent(){
+export default function Header(){
     return (
         <header>
             <Container className='flex justify-between p-5'>
-                <Link href='/dashboard'><strong className='text-3xl font-semibold'>InvoicIn</strong></Link>
+                <Link href='/'><strong className='text-3xl font-semibold'>InvoicIn</strong></Link>
                 <div>
                 <SignedOut>
                     <SignInButton />

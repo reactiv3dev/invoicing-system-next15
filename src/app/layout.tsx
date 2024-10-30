@@ -5,8 +5,9 @@ import {
   ClerkProvider,
  
 } from '@clerk/nextjs'
-import HeaderComponent from "@/components/Header";
+import Header from "@/components/Header";
 import Container from "@/components/Container";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,10 +24,11 @@ export default function RootLayout({
       <html lang="en">
         <body className="text-blue-50 bg-slate-900"
         >
-          <HeaderComponent/>
+          <Header/>
         <Container>
           {children}
         </Container>   
+        <Footer />
         </body>
       </html>
     </ClerkProvider>

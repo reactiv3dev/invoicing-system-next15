@@ -11,21 +11,7 @@ import { createNewInvoiceAction } from "@/server/actions";
 
 export default function NewInvoice() {
      
-    
-    // async function handleOnSubmit(event: SyntheticEvent){
-    //     if(state === 'pending') {
-    //         event.preventDefault();
-    //     };
-    //     setState('pending');
-    //     const target = event.target as HTMLFormElement;
-    //     startTransition(async () => {
-    //        const formData = new FormData(target);
-    //         await createNewInvoiceAction(formData); 
-    //     })
-        
-        
-    //     console.log('hey');
-    // }
+ 
      
     return (
       <main className="flex flex-col h-screen gap-6 max-w-5xl mx-auto my-12">
