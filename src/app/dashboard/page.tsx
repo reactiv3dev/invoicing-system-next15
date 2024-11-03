@@ -19,6 +19,7 @@ import { cn } from "@/lib/utils";
 async function getInvoicesPaginated(offset: number = 0, limit: number=10){
   "use server"
   const invoices = await db.select().from(Invoices).offset(offset).limit(limit);
+  
   return invoices;
 }
 
